@@ -1,0 +1,36 @@
+{
+  "name": "lightrun-ai",
+  "owner": {
+    "name": "Lightrun"
+  },
+  "metadata": {
+    "description": "Lightrun runtime investigation skills for deterministic, evidence-first debugging.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "lightrun-live-runtime-debugging",
+      "source": "./skills/lightrun-live-runtime-debugging",
+      "skills": "./",
+      "description": "Diagnose live failures by testing hypotheses with targeted Lightrun runtime evidence."
+    },
+    {
+      "name": "lightrun-error-remediation-automation",
+      "source": "./skills/lightrun-error-remediation-automation",
+      "skills": "./",
+      "description": "Guide deterministic runtime error remediation with preflight gating, evidence-first diagnosis, and PR-first fix proposal delivery."
+    },
+    {
+      "name": "lightrun-ask-prod",
+      "source": "./skills/lightrun-ask-prod",
+      "skills": "./",
+      "description": "Answer questions about live production system behavior — current values, durations, hit counts, and distributions — by instrumenting running services with Lightrun."
+    },
+    {
+      "name": "lightrun-slow-execution-diagnosis",
+      "source": "./skills/lightrun-slow-execution-diagnosis",
+      "skills": "./",
+      "description": "Diagnose slow endpoints, latency or SLO regressions, timeouts, deadlines, and hangs with slow-execution snapshots or focused active-path evidence for known hangs."
+    }
+  ]
+}
